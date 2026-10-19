@@ -1,4 +1,4 @@
-# Almer Hodžić — Portfolio
+# Almer Hodžić — Developer Portfolio
 
 Developer portfolio showcasing HoopsLab, MovieShop, and software engineering work.
 
@@ -32,4 +32,5 @@ The homepage includes a real portrait and decorative paper-boat variants selecte
 
 ## Live portfolio
 
-Pending production deployment. The verified production URL will be added after deployment succeeds.
+- **[Live portfolio](https://portfolio-liard-two-88.vercel.app/)**
+- **[Source repository](https://github.com/almer-hodzic/portfolio)**

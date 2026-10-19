@@ -11,6 +11,10 @@ export default function RouteEffects() {
     const project = pathname.startsWith("/projects/") ? getProject(pathname.split("/")[2]) : undefined;
     const title = project ? `${project.name} — ${profile.name}` : pathname === "/" ? `${profile.name} — ${profile.role}` : `Page not found — ${profile.name}`;
     const description = project?.description ?? defaultDescription;
+    const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const canonicalUrl = new URL(pathname, canonical?.href ?? window.location.href).href;
+    canonical?.setAttribute("href", canonicalUrl);
+    document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonicalUrl);
     document.title = title;
     for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
       document.querySelector(selector)?.setAttribute("content", description);

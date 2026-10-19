@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://portfolio-liard-two-88.vercel.app/sitemap.xml
