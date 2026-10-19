@@ -1,0 +1,11 @@
+node_modules/
+dist/
+verification/
+.git/
+.idea/
+.vscode/
+.openai/
+.env
+.env.*
+public/images/hoopslab/
+public/hero/9e8464e9-ff82-4ef8-a54b-cd2a3245d3dc.png

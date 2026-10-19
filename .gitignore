@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.vite/
+.vercel/
+.vscode/
+.DS_Store
+Thumbs.db
+.idea/
+.env
+.env.*
+!.env.example
+*.local
+*.log
+*.tsbuildinfo
+verification/
+# Unused historical research graphics and duplicate boat capture; retained locally.
+public/images/hoopslab/
+public/hero/9e8464e9-ff82-4ef8-a54b-cd2a3245d3dc.png
