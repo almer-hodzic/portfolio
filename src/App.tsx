@@ -5,6 +5,7 @@ import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 import SelectedWork from "./sections/SelectedWork";
+import AdditionalEngineeringWork from "./sections/AdditionalEngineeringWork";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <SelectedWork />
+        <AdditionalEngineeringWork />
         <Experience />
         <About />
         <Contact />

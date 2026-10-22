@@ -35,20 +35,6 @@ export default function SelectedWork() {
             </article>
           ))}
         </div>
-        <Reveal className="mt-10 border-t border-line/70 pt-8 sm:mt-12">
-          <aside aria-labelledby="additional-work-title" className="max-w-3xl">
-            <h3 id="additional-work-title" className="text-sm font-semibold text-muted">Additional engineering work · Academic work</h3>
-            <h4 className="mt-5 font-display text-xl font-semibold">CineMatch</h4>
-            <p className="mt-1 text-sm text-muted">Software Architecture &amp; Quality Design</p>
-            <p className="mt-3 leading-7 text-muted">Academic software architecture project for a movie recommendation platform, with explicit attention to testability, validation, failure handling, fallback behaviour and system stability.</p>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-muted">
-              <li>Defined system/API boundaries and user roles.</li>
-              <li>Considered unit and integration testing boundaries.</li>
-              <li>Designed fallback behaviour for recommendation and external API failures.</li>
-              <li>Treated testability and stability as architecture quality attributes.</li>
-            </ul>
-          </aside>
-        </Reveal>
       </div>
     </section>
   );
