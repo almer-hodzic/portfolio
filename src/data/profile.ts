@@ -22,4 +22,5 @@ export const technologies = {
   Frontend: ["TypeScript", "React", "Angular", "HTML / CSS"],
   Data: ["Python", "SQL Server", "pandas / NumPy", "scikit-learn"],
   Tools: ["Git / GitHub", "Clean Architecture", "CQRS / MediatR", "Integration testing"],
+  Quality: ["Functional testing", "Defect analysis", "API verification", "Automated tests"],
 };

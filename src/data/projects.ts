@@ -116,6 +116,7 @@ export const projects: Project[] = [
       "Applied FluentValidation in the request pipeline and Reactive Forms validation in Angular, including asynchronous username availability checks.",
       "Implemented JWT access and refresh tokens, account recovery, two-factor verification, and an admin authorization policy.",
       "Modeled catalog relationships, carts, favourites, and per-user notification state with EF Core and SQL Server; integration tests cover authentication, authorization, checkout, and saved items.",
+      "Automated tests cover authentication/2FA flows, notification isolation, PayPal checkout and authorization rules.",
     ],
     evidence: [
       { value: "4", label: "core backend layers" },
