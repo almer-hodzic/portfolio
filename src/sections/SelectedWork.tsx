@@ -26,6 +26,7 @@ export default function SelectedWork() {
                     <div className="mt-6 flex flex-wrap items-center gap-x-7 gap-y-2">
                       <Link to={`/projects/${project.slug}`} className="text-link inline-flex min-h-11 items-center gap-2 font-medium">View case study <ArrowRight size={17} aria-hidden="true" /></Link>
                       <a href={project.githubUrl} className="text-link inline-flex min-h-11 items-center gap-1 text-sm text-muted">GitHub <ArrowUpRight size={15} aria-hidden="true" /></a>
+                      {project.liveUrl && <a href={project.liveUrl} className="text-link inline-flex min-h-11 items-center gap-1 text-sm">Live Demo <ArrowUpRight size={15} aria-hidden="true" /></a>}
                     </div>
                   </div>
                 </div>

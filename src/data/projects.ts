@@ -92,6 +92,7 @@ export const projects: Project[] = [
       },
     ],
     githubUrl: "https://github.com/almer-hodzic/hoops-lab",
+    liveUrl: "https://hoops-lab-five.vercel.app/",
     docsUrl: "https://github.com/almer-hodzic/hoops-lab/blob/main/reports/simulation/PRODUCTION_SIMULATOR.md",
   },
   {

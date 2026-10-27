@@ -38,6 +38,7 @@ test("home leads with HoopsLab, then MovieShop, with real case-study destination
   assert.deepEqual(titles.slice(0, 2), ["HoopsLab", "MovieShop"]);
   assert.match(html, /href="\/projects\/hoopslab"/);
   assert.match(html, /href="\/projects\/movieshop"/);
+  assert.match(html, /href="https:\/\/hoops-lab-five\.vercel\.app\/"[^>]*>Live Demo/);
   assert.match(html, /Almer Hodžić/);
   const sectionOrder = [...html.matchAll(/<section id="([^"]+)"/g)].map((m) => m[1]);
   assert.deepEqual(sectionOrder, ["work", "experience", "about", "contact"]);
@@ -75,7 +76,13 @@ for (const project of projects) {
     checkPage(html);
     assert.ok(html.includes(`href="${project.githubUrl}"`));
     assert.ok(html.includes(`href="${project.docsUrl}"`));
-    assert.doesNotMatch(html, /Live demo/);
+    if (project.slug === "hoopslab") {
+      assert.equal(project.liveUrl, "https://hoops-lab-five.vercel.app/");
+      assert.match(html, /href="https:\/\/hoops-lab-five\.vercel\.app\/"[^>]*>Live Demo/);
+      assert.equal((html.match(/>Live Demo /g) ?? []).length, 1);
+    } else {
+      assert.doesNotMatch(html, /Live Demo/i);
+    }
     assert.match(html, /Verification &amp; scope/);
     if (project.slug === "hoopslab") {
       assert.match(html, /simulation API/);

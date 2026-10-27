@@ -77,7 +77,7 @@ export default function ProjectPage() {
               <div className="mt-12 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-line/70 pt-8">
                 <a href={project.githubUrl} className="button-primary"><Github size={17} aria-hidden="true" />View source on GitHub</a>
                 <a href={project.docsUrl} className="text-link inline-flex min-h-11 items-center gap-1 text-sm">Read documentation <ArrowUpRight size={16} aria-hidden="true" /></a>
-                {project.liveUrl && <a href={project.liveUrl} className="text-link inline-flex min-h-11 items-center gap-1 text-sm">Live demo <ArrowUpRight size={16} aria-hidden="true" /></a>}
+                {project.liveUrl && <a href={project.liveUrl} className="text-link inline-flex min-h-11 items-center gap-1 text-sm">Live Demo <ArrowUpRight size={16} aria-hidden="true" /></a>}
               </div>
             </div>
           </section>
